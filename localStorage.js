@@ -20,14 +20,18 @@ class LocalStorage {
         return this.items[key];
     }
 
+    key(index){
+        return Object.keys(this.items)[index];
+    }
+
     setItem(key, value) {
         this.items[key] = value;
-        console.log('JSON.stringify(this.items)', JSON.stringify(this.items));
-        writeFile('localStorage.json', JSON.stringify(this.items), error => {
-            if (error) {
-                console.error(error);
-            }
-        })
+        this.writeJsonFile(this.items);
+    }
+
+    removeItem(key){
+        delete this.items[key];
+        this.writeJsonFile(this.items);
     }
 
     clear() {
@@ -35,6 +39,14 @@ class LocalStorage {
         unlink('localStorage.json', () => {
             console.log('localStorage file removed');
         })
+    }
+
+    writeJsonFile(json){
+        writeFile('localStorage.json', JSON.stringify(json), error => {
+            if (error) {
+                console.error(error);
+            }
+        });
     }
 
 }
