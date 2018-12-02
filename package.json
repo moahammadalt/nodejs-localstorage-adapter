@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-localstorage-adapter",
+  "version": "1.0.0",
+  "description": "A tiny ES6 class for simulating localstorage browser behaviour in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moahammadalt/nodejs-localstorage-adapter.git"
+  },
+  "author": "mohammad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moahammadalt/nodejs-localstorage-adapter/issues"
+  },
+  "homepage": "https://github.com/moahammadalt/nodejs-localstorage-adapter#readme"
+}
