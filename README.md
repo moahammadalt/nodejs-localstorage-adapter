@@ -1,5 +1,6 @@
-# nodejs-localstorage-adapter
-A tiny ES6 class for simulating localstorage browser behaviour in nodejs
+# nodejs-localstorage-adapter (WIP)
+
+A tiny ES6 class for simulating localstorage browser behaviour in nodejs.
 
 <br />
 
