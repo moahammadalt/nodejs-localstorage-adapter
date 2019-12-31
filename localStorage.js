@@ -4,8 +4,8 @@ class LocalStorage {
 
     constructor() {
         if (existsSync('localStorage.json')) {
-            console.log('Loading items from localStorage.json');
             var txt = readFileSync('localStorage.json');
+            console.log('txt: ', txt);
             this.items = JSON.parse(txt);
         } else {
             this.items = {};
@@ -36,17 +36,11 @@ class LocalStorage {
 
     clear() {
         this.items = {};
-        unlink('localStorage.json', () => {
-            console.log('localStorage file removed');
-        })
+        return unlink('localStorage.json');
     }
 
     writeJsonFile(json){
-        writeFile('localStorage.json', JSON.stringify(json), error => {
-            if (error) {
-                console.error(error);
-            }
-        });
+        return writeFile('localStorage.json');
     }
 
 }
