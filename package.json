@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/moahammadalt/nodejs-localstorage-adapter/issues"
   },
-  "homepage": "https://github.com/moahammadalt/nodejs-localstorage-adapter#readme"
+  "homepage": "https://github.com/moahammadalt/nodejs-localstorage-adapter#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
