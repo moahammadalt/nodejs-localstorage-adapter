@@ -4,6 +4,7 @@ A tiny ES6 class for simulating localstorage browser behaviour in nodejs
 <br />
 
 to install the package run:
+
 `npm install nodejs-localstorage-adapter --save`
 
 <br />
@@ -11,6 +12,7 @@ to install the package run:
 <b><h2>How to use:</h2></b>
 
 first include the package to your project:
+
 `var localStorage = require('nodejs-localstorage-adapter');`
 
 <b>-Methods</b>
